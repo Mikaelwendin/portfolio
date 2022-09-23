@@ -1,0 +1,135 @@
+body {
+    background-color: #653CAC;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: #281844;
+}
+
+/* Min "artistiska" vinklade box.  */
+
+.my-angle {
+    background-image: linear-gradient(45deg, #653CAC, #020203);
+    transform: skewY(-11deg);
+    position: relative;
+
+}
+
+.my-angle::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: skewY(-11deg)
+}
+
+/* Vinklar tillbaka innehållet så det blir rakt. */
+article>section,
+aside {
+    color: #f6f6f8;
+    transform: skewY(11deg);
+}
+
+.my-midbox {
+    border-right: 2px dotted #f6f6f8;
+}
+
+nav {
+    border-bottom: 2px dotted #f6f6f8;
+}
+
+.navbar-nav a {
+    font-size: 150%;
+    transition: 1s;
+    color: inherit;
+    text-decoration: none;
+    background:
+        linear-gradient(to right,
+            rgba(200, 200, 200, 1),
+            rgba(200, 200, 200, 1)),
+        linear-gradient(to right,
+            rgb(182, 166, 219),
+            rgb(135, 35, 216),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    margin-bottom: 2%;
+
+}
+
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+span.my-size-l {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+}
+
+span.my-size-m {
+    font-size: 1em;
+}
+
+section img {
+    border-radius: 50%;
+}
+
+.my-aside a {
+    padding: 5%;
+    color: #f6f6f8;
+}
+
+header h1 {
+    text-transform: capitalize;
+    color: #f6f6f8;
+    font-size: 4rem;
+    z-index: 100;
+    font-weight: bolder;
+}
+
+h2 {
+    padding-top: 5%;
+}
+
+.my-aside {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Egna breakpoints för lite fine tuning */
+
+@media screen and (min-width: 992px) {
+    .my-midbox p {
+
+        width: 50%;
+        padding-top: 5%;
+
+    }
+
+    .my-angle {
+
+        border-bottom: 2px dotted #f6f6f8;
+    }
+
+
+}
+
+@media screen and (min-width: 1136px) {
+
+    .my-aside {
+        flex-direction: column;
+    }
+
+    .my-midbox {
+        border-top: 2px dotted #f6f6f8;
+    }
+
+}
