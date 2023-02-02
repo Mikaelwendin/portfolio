@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
+  <link href="/src/scss/main.scss" rel="stylesheet" />
+  <script src="./ts/main.ts" type="module" defer></script>
+
+</head>
+
+<body>
+  <main class="container-fluid">
+    <header class="row">
+      <!-- Navbar and header. Något modifierad bootstrap-navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid my-container-fluid justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-center" id="navbarSupportedContent">
+            <div class="navbar-nav mb-2 mb-lg-0 align-items-center gap-lg-5">
+              <a class="nav-link active text-light" aria-current="page" href="/src/index.html"
+                data-replace="Home"><span>Home</span></a>
+              <a class="nav-link text-light" href="../src/html/projects.html"
+                data-replace="Projects"><span>Projects</span></a>
+              <a class="nav-link text-light" href="#" data-replace="Contact"><span>Contact</span></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <h1 id="mainheader"><span id="left">front </span><span id="mid"> end</span><span id="right"> developer</span></h1>
+
+    </header>
+    <!-- Main content -->
+    <article class="my-leftbox row text-center my-angle gap-5">
+      <h2 class="visually-hidden">Main content</h2>
+      <section class="col">
+        <h2>Hi, I'm Mikael!</h2>
+        <img src="assets/pictures/cv.jpg" class="img-fluid" alt="portrait" />
+        <p>
+          Front End Developer in the making
+        </p>
+        <h2>Skills</h2>
+        <div class="bar" id="html-bar"><p>HTML</p></div>
+        <div class="bar" id="css-bar"><p>CSS</p></div>
+        <div class="bar" id="javascript-bar"><p>JS</p></div>
+        <div class="bar" id="typescript-bar"><p>TS</p></div>
+        <div class="bar" id="react-bar"><p>React</p></div>
+        <div class="bar" id="vue-bar"><p>Vue</p></div>
+       
+          
+      </section>
+      <section class="my-midbox col-12 col-lg-8">
+        <h2>So... Who am I?</h2>
+        <p class="mx-auto reveal">
+          Front End Developer student working with Javascript, Typescript (and in the future) Vue, React and (sometimes) node.js, GraphQL
+          and REST-API-development.
+          I'm always keen on learning new stuff and I love programming... Even when it makes my brain melt.</p>
+          <a class="nav-link text-light reveal" href="#">Get to know me!</a>
+        <h2>Projects</h2>
+        <p class="mx-auto reveal">Currenly I'm working on several school projects but this section will evolve, as my
+          skills evolve. Check out my what I've been working with so far...</p>
+          <a class="nav-link text-light reveal" href="../src/html/projects.html">Projects</a>
+      </section>
+      <!-- aside som "blir footer" -->
+      <aside class="my-aside my-right col display-4 justify-content-center">
+        <a href="https://github.com/Mikaelwendin" title="Github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/mikael-wendin-2a7223251/" title="Linkedin"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com" title="Facebook"><i class="bi bi-facebook"></i></a>
+      </aside>
+    </article>
+  </main>
+</body>
+
+</html>
