@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects</title>
+  <title>Contact</title>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
@@ -39,21 +39,43 @@
           </div>
         </div>
       </nav>
-      <h1>Projects</h1>
+      <h1>Contact me</h1>
     </header>
     <!-- Main content -->
     <article class="my-leftbox row align-items-center text-center h-100 my-angle gap-5 projects">
       <h2 class="visually-hidden">Main content</h2>
       <section class="col h-100 projects">
-        <h2>Projects</h2>
-        <ul>
-        </ul>
       </section>
       <section class="my-midbox col-12 col-lg-8 h-100 justify-content-center">
-        <h2>Projects</h2>
-        <p class="mx-auto">
-          ...
-        </p>
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="mailer.php">
+        
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+    
+    
+        </form>
       </section>
       <!-- aside som "blir footer" -->
       <aside class="my-aside my-right col display-4">

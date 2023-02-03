@@ -8,7 +8,7 @@ body {
 header {
   & h1 {
     text-transform: capitalize;
-    font-size: 5rem;
+    font-size: 350%;
     width: auto;
     font-weight: 900;
     max-width: 100%;
@@ -66,8 +66,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 100vh;
     --b: 2px; /* thickness of the border */
     --c: #54b3d6; /* color of the border */
     --w: 25%; /* width of border */
@@ -83,6 +81,13 @@ main {
       conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g))
         100% 100% / var(--_p);
 
+        & .proLink {
+          margin-bottom: 30%;
+          @include mixins.for-size(desktop) {
+            margin-bottom: 5%;
+          }
+        }
+
     & p {
       margin-top: 1%;
     }
@@ -94,6 +99,7 @@ main {
       width: fit-content;
       padding: 1%;
       margin-top: 1%;
+      
 
       &:hover {
         color: #54b3d6 !important;
